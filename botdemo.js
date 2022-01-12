@@ -18,7 +18,7 @@ setInterval(()=>{
     getAvailableDates(mtpearlId, classFive).then(res=>{
         res.forEach(r=>{
             getAvailableTimes(mtpearlId, classFive, r.date).then(timeRes=>{
-                consale.log(" available date on ", r.date, "times", timeRes)
+                console.log(" available date on ", r.date, "times", timeRes)
             }
             )
         })
